@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPA - Personal Portfolio</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/fancybox/fancybox.css">
+    <link rel="stylesheet" href="vendor/wow/css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <style>
+        .loader-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            background-color: #040404;
+            width: 100%;
+            height: 100%;
+            z-index: 100000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loader-container">
+        <div class="loader">
+            <img src="img/loading.gif" alt="">
+        </div>
+    </div>
+
+    <section id="header" class="container-fluid header">
+        <div class="row site-nav m-0 bg-color-1 wow fadeInDown">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="d-flex align-items-center justify-content-end navbar navbar-expand-lg navbar-light">
+                            <div class="mx-0 mx-xl-5 container-fluid d-flex justify-content-between p-0">
+                                <a class="navbar-brand fw-bolder" href="https://waiphyoaung.netlify.app" style="width: 150px; margin: 0;">
+                                    <img src="img/logo.png" class="w-100" alt="">
+                                </a>
+                                <button class="menu-btn d-block d-lg-none p-0">
+                                    <i class="fa fa-bars menu-icon"></i>
+                                </button>
+                                <div
+                                    class="justify-content-end onepage-nev collapse navbar-collapse fw-bold text-primary ">
+                                    <ul class="d-flex nav-container borderXwidth m-0">
+                                        <li class="smooth-scroll">
+                                            <a href="#header" class="section-nav text-uppercase">HOME</a>
+                                        </li>
+                                        <li class="smooth-scroll">
+                                            <a href="#about" class="section-nav text-uppercase">ABOUT</a>
+                                        </li>
+                                        <li class="smooth-scroll">
+                                            <a href="#skill" class="section-nav text-uppercase">SKILLS</a>
+                                        </li>
+                                        <li class="smooth-scroll">
+                                            <a href="#services" class="section-nav text-uppercase">services</a>
+                                        </li>
+                                        <li class="smooth-scroll">
+                                            <a href="#portfolio" class="section-nav text-uppercase">PORTFOLIO</a>
+                                        </li>
+                                        <li class="smooth-scroll">
+                                            <a href="#blog" class="section-nav text-uppercase">blog</a>
+                                        </li>
+                                        <li class="smooth-scroll">
+                                            <a href="#contact" class="section-nav text-uppercase">CONTACT</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="home" class="container-fluid home bg-color-1">
+            <div class="row mx-0 mx-xl-4">
+                <div class="container mx-md-0">
+                    <div class="row mx-0 mx-lg-5 pb-0 pb-md-3 pb-lg-0 pb-xl-0 intro-box align-items-center flex-column-reverse flex-md-row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-6 wow fadeInLeft ani-delay-1">
+                            <div class="intro">
+                                <h4 class="text-secondary fw-bold">Hello!</h4>
+                                <h1 class=" fw-bolder text-primary">
+                                    I'am
+                                    <span class="typed-text text-dark"></span>
+                                </h1>
+                                <p class="text-secondary h5 fw-bold">A Front-End Web Developer</p>
+                                <div class="d-flex align-items-center mb-2 ">
+                                    <i class="fa fa-envelope me-2"></i>
+                                    <p class="text-primary mb-0">waiphyoaung17903@gmail.com</p>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 ">
+                                    <i class="fa fa-phone me-2"></i>
+                                    <p class="text-primary mb-0">+959777605370</p>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 ">
+                                    <i class="fa fa-map-marker me-2"></i>
+                                    <p class="text-primary mb-0">Mandalay , Myanmar</p>
+                                </div>
+                                <a href="#about" class="text-uppercase fw-bold hvr-rectangle-out my-2">about me</a>
+                                <div class="social-icon my-2">
+                                    <a href="https://www.facebook.com/wai.p.aung.353250" target="blank">
+                                        <i class="fa fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/wai.p.aung.353250" target="blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a href="https://twitter.com/WaiPhyoAung179" target="blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="https://github.com/waiphyoaung17" target="blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 wow fadeInUp ani-delay-2">
+                            <div class="text-end my-3 my-md-0 home-img">
+                                <img src="img/profile.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="container about section-padding pb-0">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center my-5">
+                        <h1 class="wow fadeInDown text-uppercase text-primary fw-bolder">about me</h1>
+                        <div class="horizontal-line">
+                            <div class="top wow slideInLeft ani-delay-1"></div>
+                            <div class="bottom wow slideInRight ani-delay-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row mb-5 mb-md-0">
+                        <div class="col-12 col-lg-6">
+                            <div class="mx-lg-5 mb-5 mb-lg-0">
+                                <h3 class="text-primary fw-bold mb-4 wow slideInLeft">Hello,I'am <b>Wai Phyo Aung.</b><br>A Web Developer.</h3>
+                                <h5 class="text-black-50 wow slideInLeft ani-delay-1">I'm an enthusiastic and detail-oriented
+                                Web Developer seeking an entry-level position with company to use my skills in coding,troubleshooting complex problems, and assisting in the timely completion of projects.</h5>
+                                <h5 class="text-black-50 wow slideInLeft ani-delay-2">I have vast experience in HTML5, CSS3, Javascript, Vue.js, PHP, Laravel, mySql, JQuery, Bootstrap
+                                    and other libs.
+                                    </h5>
+                                <div class="row mb-4 wow slideInLeft ani-delay-3">
+                                    <div class="col-12 col-lg-5">
+                                        <ul class="p-0 m-0">
+                                            <li class="d-flex my-2">
+                                                <div class="title text-secondary"> Name-</div>
+                                                <div class="value text-primary fw-bold"> Wai Phyo Aung </div>
+                                            </li>
+                                            <li class="d-flex my-2">
+                                                <div class="title text-secondary"> Age-</div>
+                                                <div class="value text-primary fw-bold"> 18 years </div>
+                                            </li>
+                                            <li class="d-flex my-2">
+                                                <div class="title text-secondary"> Phone-</div>
+                                                <div class="value text-primary fw-bold"> +959777605370 </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-lg-7">
+                                        <ul class="p-0 m-0">
+                                            <li class="d-flex my-2">
+                                                <div class="title text-secondary">Email-</div>
+                                                <div class="value text-primary fw-bold"> waiphyoaung17903@gmail.com </div>
+                                            </li>
+                                        
+                                            <li class="d-flex my-2">
+                                                <div class="title text-secondary"> Address-</div>
+                                                <div class="value text-primary fw-bold"> Mandalay , Myanmar </div>
+                                            </li>
+                                            <li class="d-flex my-2">
+                                                <div class="title text-secondary"> Hobby-</div>
+                                                <div class="value text-primary fw-bold"> Coding , Travel </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="wow slideInLeft ani-delay-4">
+                                    <a href="#contact" class="text-uppercase fw-bold hvr-rectangle-out">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="wow slideInRight svg-img">
+                                <img src="img/Code%20typing-rafiki.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skill" class="container about section-padding pt-2">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center my-5">
+                        <h1 class="wow fadeInDown text-uppercase text-primary fw-bolder">My Skills</h1>
+                        <div class="horizontal-line">
+                            <div class="top wow slideInLeft ani-delay-1"></div>
+                            <div class="bottom wow slideInRight ani-delay-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row mb-5 mb-md-0">
+                        <div class="col-12 px-5 col-md-6 mb-5 mb-md-0 wow slideInRight">
+                            <div class="text-center mb-5">
+                                <h3 class="fw-bold text-primary text-uppercase">
+                                    <i class="fa fa-globe"></i>
+                                    <br>
+                                    Web Development
+                                </h3>
+                                <div class="horizontal-line">
+                                    <div class="top wow slideInLeft ani-delay-1"></div>
+                                    <div class="bottom wow slideInRight ani-delay-2"></div>
+                                </div>
+                            </div>
+                            <div class="right skill-progress">
+                                <!-- skill bar 1 -->
+                                <div class="skill-bar" data-percentage="95%">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">HTML</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                                <!-- skill bar 2 -->
+                                <div class="skill-bar" data-percentage="85%">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">CSS</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                                <!-- skill bar 3 -->
+                                <div class="skill-bar" data-percentage="70%">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">JAVASCRIPT</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar" data-percentage="75%">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">PHP</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar" data-percentage="75%">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">MySQL</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar" data-percentage="60%">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">AJAX</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-5 col-md-6 wow slideInRight">
+                            <div class="text-center mb-5">
+                                <h3 class="fw-bold text-primary text-uppercase">
+                                    <i class="fa fa-cog"></i>
+                                    <br>
+                                    Framework
+                                </h3>
+                                <div class="horizontal-line">
+                                    <div class="top wow slideInLeft ani-delay-1"></div>
+                                    <div class="bottom wow slideInRight ani-delay-2"></div>
+                                </div>
+                            </div>
+                            <div class="right skill-progress">
+                                <div class="skill-bar" data-percentage="60%">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">Laravel</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                                <!-- skill bar 5 -->
+                                <div class="skill-bar" data-percentage="50%">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">Vue</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                                <!-- skill bar 4 -->
+                                <div class="skill-bar" data-percentage="97%">
+                                    <h4 class="progress-title-holder">
+                                        <span class="progress-title">BOOTSTRAP</span>
+                                        <span class="progress-wrapper">
+                                            <span class="progress-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="container services section-padding bg-color-1">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <h1 class="wow fadeInDown text-uppercase text-primary fw-bolder">My Services</h1>
+                        <div class="horizontal-line">
+                            <div class="top wow slideInLeft ani-delay-1"></div>
+                            <div class="bottom wow slideInRight ani-delay-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row mx-3 mx-md-0">
+                        <div class="col-12 col-md-4 wow fadeInRight ani-delay-3">
+                            <div class="card shadow service-card mb-5">
+                                <div class="card-body text-center">
+                                    <img src="img/ui_ux.svg" class="my-3" alt="">
+                                    <h4 class="text-primary font-weight-bolder my-3">UI/UX DESIGN</h4>
+                                    <p class="text-black-50">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quos amet non
+                                        itaque quam omnis suscipit molestias ipsam assumenda harum ipsum recusandae
+                                        facere soluta aliquid, nulla quia laborum praesentium quidem.
+                                    </p>
+                                    <a href="#" class="hvr-rectangle-out my-3">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 wow fadeInRight ani-delay-4">
+                            <div class="card shadow service-card mb-5">
+                                <div class="card-body text-center">
+                                    <img src="img/web_design.svg" class="my-3" alt="">
+                                    <h4 class="text-primary font-weight-bolder my-3">WEB DESIGN</h4>
+                                    <p class="text-black-50">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quos amet non
+                                        itaque quam omnis suscipit molestias ipsam assumenda harum ipsum recusandae
+                                        facere soluta aliquid, nulla quia laborum praesentium quidem.
+                                    </p>
+                                    <a href="#" class="hvr-rectangle-out my-3">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 wow fadeInRight ani-delay-5">
+                            <div class="card shadow service-card mb-5">
+                                <div class="card-body text-center">
+                                    <img src="img/web-dev.svg" class="my-3" alt="">
+                                    <h4 class="text-primary font-weight-bolder my-3">WEB DEVELOPMENT</h4>
+                                    <p class="text-black-50 overflow-hidden">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quos amet non
+                                        itaque quam omnis suscipit molestias ipsam assumenda harum ipsum recusandae
+                                        facere soluta aliquid, nulla quia laborum
+                                    </p>
+                                    <a href="#" class="hvr-rectangle-out my-3">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="container portfolio section-padding">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-fluid">
+                        <div class="col-12">
+                            <div class="text-center mb-5">
+                                <h1 class="wow fadeInDown text-uppercase text-primary fw-bolder">portfolio</h1>
+                                <div class="horizontal-line">
+                                    <div class="top wow slideInLeft ani-delay-1"></div>
+                                    <div class="bottom wow slideInRight ani-delay-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeInUp ani-delay-1">
+                            <div class="">
+                                <div class="button-group filters-button-group borderXwidth portfolio-nav">
+                                    <a class="button is-checked" data-filter="*">All</a>
+                                    <a class="button" data-filter=".coruja">web</a>
+                                    <a class="button" data-filter=".paisagem">design</a>
+                                    <a class="button" data-filter=".universo">new</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeInUp ani-delay-2">
+
+                            <div class="grid ms-0 ms-md-5">
+
+
+                                <div class="element-item transition universo" data-category="transition">
+                                    <a data-fancybox="gallery" href="img/portfolio/w1.jpg">
+                                        <img src="img/portfolio/w1.jpg" class="item-image img-fluid" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="element-item transition universo" data-category="transition">
+                                    <a data-fancybox="gallery" href="img/portfolio/w2.jpg">
+                                        <img src="img/portfolio/w2.jpg" class="item-image img-fluid" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="element-item transition paisagem" data-category="transition">
+                                    <a data-fancybox="gallery" href="img/portfolio/w3.jpg">
+                                        <img src="img/portfolio/w3.jpg" class="item-image img-fluid" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="element-item transition coruja" data-category="transition">
+                                    <a data-fancybox="gallery" href="img/portfolio/w4.jpg">
+                                        <img src="img/portfolio/w4.jpg" class="item-image img-fluid" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="element-item transition universo" data-category="transition">
+                                    <a data-fancybox="gallery" href="img/portfolio/w3.jpg">
+                                        <img src="img/portfolio/w3.jpg" class="item-image img-fluid" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="element-item transition coruja" data-category="transition">
+                                    <a data-fancybox="gallery" href="img/portfolio/w6.jpg">
+                                        <img src="img/portfolio/w6.jpg" class="item-image img-fluid" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="element-item transition paisagem" data-category="transition">
+                                    <a data-fancybox="gallery" href="img/portfolio/w5.jpg">
+                                        <img src="img/portfolio/w5.jpg" class="item-image img-fluid" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="element-item transition paisagem" data-category="transition">
+                                    <a data-fancybox="gallery" href="img/portfolio/w2.jpg">
+                                        <img src="img/portfolio/w2.jpg" class="item-image img-fluid" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="element-item transition paisagem" data-category="transition">
+                                    <a data-fancybox="gallery" href="img/portfolio/w1.jpg">
+                                        <img src="img/portfolio/w1.jpg" class="item-image img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="container blog section-padding bg-color-1">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <h1 class="wow fadeInDown text-uppercase text-primary fw-bolder">my blog</h1>
+                        <div class="horizontal-line">
+                            <div class="top wow slideInLeft ani-delay-1"></div>
+                            <div class="bottom wow slideInRight ani-delay-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="wow slideInRight ani-delay-1 col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="blog-box shadow-lg">
+                                <div class="snip1401 m-0">
+                                    <img src="img/portfolio/b1.jpg" class="w-100" alt="">
+                                    <figcaption>
+                                        <h3>Eleanor Fant</h3>
+                                        <p>Which is worse, that everyone has his price, or that the price is always so
+                                            low.</p>
+                                    </figcaption>
+                                    <a href="#"></a>
+                                </div>
+                                <div class="date-comment d-flex p-3 justify-content-between align-items-center">
+                                    <h6 class="text-secondary mb-0">
+                                        <i class="fa fa-calendar mr-2"></i>
+                                        Sept 17 2021
+                                    </h6>
+                                    <h6 class="text-secondary mb-0">
+                                        <i class="fa fa-comment mr-2"></i>
+                                        5 comments
+                                    </h6>
+                                </div>
+                                <div class="blog-title p-3 d-flex justify-content-between align-items-center">
+                                    <h5 class="text-secondary mb-0">Suffered Alteration In Some</h5>
+                                    <a href="#" class="text-secondary">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="wow slideInRight ani-delay-2 col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="blog-box shadow-lg">
+                                <figure class="snip1401">
+                                    <img src="img/portfolio/b2.jpg" class="w-100" alt="">
+                                    <figcaption>
+                                        <h3>Eleanor Fant</h3>
+                                        <p>Which is worse, that everyone has his price, or that the price is always so
+                                            low.</p>
+                                    </figcaption>
+                                    <a href="#"></a>
+                                </figure>
+                                <div class="date-comment d-flex p-3 justify-content-between align-items-center">
+                                    <h6 class="text-secondary mb-0">
+                                        <i class="fa fa-calendar mr-2"></i>
+                                        Sept 26 2021
+                                    </h6>
+                                    <h6 class="text-secondary mb-0">
+                                        <i class="fa fa-comment mr-2"></i>
+                                        6 comments
+                                    </h6>
+                                </div>
+                                <div class="blog-title p-3 d-flex justify-content-between align-items-center">
+                                    <h5 class="text-secondary mb-0">Suffered Alteration In Some</h5>
+                                    <a href="#" class="text-secondary">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="wow slideInRight ani-delay-3 col-12 col-md-6 col-lg-4">
+                            <div class="blog-box shadow-lg">
+                                <figure class="snip1401">
+                                    <img src="img/portfolio/b3.jpg" class="w-100" alt="">
+                                    <figcaption>
+                                        <h3>Eleanor Fant</h3>
+                                        <p>Which is worse, that everyone has his price, or that the price is always so
+                                            low.</p>
+                                    </figcaption>
+                                    <a href="#"></a>
+                                </figure>
+                                <div class="date-comment d-flex p-3 justify-content-between align-items-center">
+                                    <h6 class="text-secondary mb-0">
+                                        <i class="fa fa-calendar mr-2"></i>
+                                        Dec 31 2021
+                                    </h6>
+                                    <h6 class="text-secondary mb-0">
+                                        <i class="fa fa-comment mr-2"></i>
+                                        15 comments
+                                    </h6>
+                                </div>
+                                <div class="blog-title p-3 d-flex justify-content-between align-items-center">
+                                    <h5 class="text-secondary mb-0">Suffered Alteration In Some</h5>
+                                    <a href="#" class="text-secondary">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="container contact section-padding">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <h1 class="wow fadeInDown text-uppercase text-primary fw-bolder">get in touch</h1>
+                        <div class="horizontal-line">
+                            <div class="top wow slideInLeft ani-delay-1"></div>
+                            <div class="bottom wow slideInRight ani-delay-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-wrap">
+                    <div class="container">
+                        <!-- Headline -->
+                        <div class="row contact-details">
+                            <!-- Adress Box -->
+                            <div class="col-md-4">
+                                <div class="dark-box box-hover">
+                                    <h2>
+                                        <i class="fa fa-map-marker wow fadeInUp ani-delay-1"></i>
+                                        <span class="wow fadeInUp ani-delay-2">Address</span>
+                                    </h2>
+                                    <p class="wow fadeInUp ani-delay-3">Mandalay, Myanmar</p>
+                                </div>
+                            </div>
+                            <!-- Phone Number Box -->
+                            <div class="col-md-4">
+                                <div class="dark-box box-hover">
+                                    <h2>
+                                        <i class="fa fa-mobile wow fadeInUp ani-delay-1"></i>
+                                        <span class="wow fadeInUp ani-delay-2">Phone</span>
+                                    </h2>
+                                    <p class="wow fadeInUp ani-delay-3">+95 777 605 370</p>
+                                </div>
+                            </div>
+                            <!-- E-Mail Box -->
+                            <div class="col-md-4">
+                                <div class="dark-box box-hover">
+                                    <h2>
+                                        <i class="fa fa-paper-plane wow fadeInUp ani-delay-1"></i>
+                                        <span class="wow fadeInUp ani-delay-2">Email</span>
+                                    </h2>
+                                    <p class="wow fadeInUp ani-delay-3"><a href="#" class="text-decoration-none">waiphyoaung17903@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Google Maps (Change your Settings below) -->
+                            <div class="col-12 col-md-6 wow slideInLeft">
+                                <div id="googlemaps" style="margin-top: 20px;overflow: hidden;">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59184.988680127644!2d96.05908796360521!3d22.008943209281046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6ceda6ad5ac7%3A0x33e027f21135436d!2sAungmyaythazan%2C%20Mandalay!5e0!3m2!1sen!2smm!4v1631533932660!5m2!1sen!2smm"
+                                        width="534" height="293" style="border:0;" allowfullscreen=""
+                                        loading="lazy"></iframe>
+                                </div>
+                            </div>
+                            <!-- Contact Form -->
+                            <div class="col-12 col-md-6">
+                                <div class="contact-form pt-4">
+                                    <form class="custom-input contact_form">
+                                        <div class="row name-email">
+                                            <div class="col-12 col-lg-6 wow slideInRight">
+                                                <input type="text" id="contact_name" name="name"
+                                                    placeholder="Your Name" />
+                                            </div>
+                                            <div class="col-12 col-lg-6 wow slideInRight ani-delay-1">
+                                                <input type="email" id="contact_email" name="email" placeholder="Your Email"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <textarea class="wow slideInRight ani-delay-2 mt-4" name="message" id="contact_message" rows="6"
+                                                    placeholder="Your Message"></textarea>
+                                                <button class="wow slideInRight text-uppercase mt-4 fw-bold hvr-rectangle-out"
+                                                    type="submit" name="submit" id="contact_submit"
+                                                    data-complete-text="Well done!">
+                                                    send message
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex footer-item justify-content-between align-items-center text-secondary">
+                            <div class="copyright">
+                                <p class="m-0">Copyright&copy;2021.</p>
+                                <p class="m-0">Designed by <a href="https://waiphyoaung.netlify.app" class="text-decoration-none fw-bold text-primary">Wai Phyo Aung</a></p>
+                            </div>
+                            <div class="">
+                                <ul class="footer-social d-flex m-0 list-unstyled text-uppercase">
+                                    <li class="">
+                                        <a href="https://www.facebook.com/wai.p.aung.353250" class="" target="blank">facebook</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="https://www.instagram.com/wai.p.aung.353250" class="" target="blank">instargram</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="https://twitter.com/WaiPhyoAung179" class="" target="blank">twitter</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="https://github.com/waiphyoaung17" class="" target="blank">github</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div class="sidemenu">
+        <div class="close-icon">
+            <i class="fa fa-arrow-circle-right"></i>
+        </div>
+        <div class="menu-logo">
+            <a href="">
+                <img src="img/logo.png" alt="" class="w-100">
+            </a>
+        </div>
+        <div class="sidemenu-list onepage-nev">
+            <ul class="">
+                <li class="sidemenu-item text-uppercase text-light fw-bold fs-6">
+                    <a href="#header">home</a>
+                </li>
+                <li class="sidemenu-item text-uppercase text-light fw-bold fs-6">
+                    <a href="#about">about</a>
+                </li>
+                <li class="sidemenu-item text-uppercase text-light fw-bold fs-6">
+                    <a href="#skill">skills</a>
+                </li>
+                <li class="sidemenu-item text-uppercase text-light fw-bold fs-6">
+                    <a href="#services">services</a>
+                </li>
+                <li class="sidemenu-item text-uppercase text-light fw-bold fs-6">
+                    <a href="#portfolio">portfolio</a>
+                </li>
+                <li class="sidemenu-item text-uppercase text-light fw-bold fs-6">
+                    <a href="#blog">blog</a>
+                </li>
+                <li class="sidemenu-item text-uppercase text-light fw-bold fs-6">
+                    <a href="#contact">contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/jquery/jquery-3.6.0.js"></script>
+    <script src="js/app.js"></script>
+    <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendor/fancybox/fancybox.umd.js"></script>
+    <script src="vendor/one_page_nav/one-page-nav.js"></script>
+    <script src="vendor/wow/js/wow.js"></script>
+    <script src="vendor/typed/lib/typed.js"></script>
+    <script type='text/javascript'>document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script>
+</body>
+
+</html>
