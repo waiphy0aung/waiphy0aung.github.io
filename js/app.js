@@ -12,9 +12,12 @@ $(document).ready(function () {
         let currentPosition = $(this).scrollTop();
         if (currentPosition < 245){
             $(".site-nav").removeClass("site-nav-scroll")
+            $(".up-arrow").removeClass("back-to-top")
         }else {
             $(".site-nav").addClass("site-nav-scroll")
+            $(".up-arrow").addClass("back-to-top")
         }
+
     })
 
     $(".menu-btn").click(function (){
