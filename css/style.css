@@ -631,6 +631,8 @@ ul.borderXwidth li.active:before, ul.borderXwidth li.active:after
       font-weight: 300;
       line-height: 26px;
       color: #454545;
+      background: #f5f5f5 none repeat scroll 0 0;
+
   }
   .contact-form textarea {
       max-height: 148px;
